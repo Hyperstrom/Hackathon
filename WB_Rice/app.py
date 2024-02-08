@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-from test import *
-from excel_files import *
+# from test import *
+# from excel_files import *
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import load_model
 
