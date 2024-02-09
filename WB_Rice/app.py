@@ -10,14 +10,6 @@ import seaborn as sns
 
 # Load your pre-trained model and necessary data here
 
-# Sample function to get markets and varieties based on district
-def get_markets_and_varieties(district):
-    if district in district_market_variety_mapping:
-        markets = list(district_market_variety_mapping[district].keys())
-        return markets, []
-    else:
-        return [], []
-
 st.set_page_config(layout="wide")
 
 
