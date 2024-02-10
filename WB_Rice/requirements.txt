@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+datetime
+matplotlib
+seaborn
+scikit-learn
+tensorflow
+openpyxl
