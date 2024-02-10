@@ -3,8 +3,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+import path
+import sys
 
-big_data = pd.read_excel('West_bengail_Rice_2013-2023.xlsx')
+dir = path.Path(__file__).abspath()
+sys.path.append(dir.parent.parent)
+
+big_data_path = 'West_bengail_Rice_2013-2023.xlsx'
+
+with open(big_data_path,'rb') as file:
+    big_data = pd.read_excel('West_bengail_Rice_2013-2023.xlsx')
+  
 columns_dtype = {'Sl no.':int,
                   'Min Price (Rs./Quintal)':int,
                   'Max Price (Rs./Quintal)':int,
