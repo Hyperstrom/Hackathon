@@ -7,4 +7,3 @@ seaborn
 scikit-learn
 tensorflow
 openpyxl
-sys
