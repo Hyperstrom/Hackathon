@@ -15,6 +15,12 @@ from tensorflow.keras.models import load_model
 
 from excel_files import main_data_frame , models_data_frame
 
+import path
+import sys
+
+dir = path.Path(__file__).abspath()
+sys.path.append(dir.parent.parent)
+
 df = main_data_frame()
 model_df = models_data_frame()
 
